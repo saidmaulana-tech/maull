@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Great Giant Foods</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #4CAF50, #388E3C);
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: white;
+      padding: 8px 12px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    /* Hero section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('gambarr/sawahan.jpeg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    /* About section */
+    .about {
+      padding: 50px 20px;
+      text-align: center;
+      background: #f4f4f4;
+    }
+
+    .about h2 {
+      font-size: 2em;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Publications section */
+    .publications {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .publications h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 1.2em;
+    }
+
+    /* Custom Footer */
+    .footer {
+      background: #4CAF50;
+      color: white;
+      padding: 30px 10px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .footer-left img {
+      width: 100px;
+      height: auto;
+    }
+
+    .footer-center p {
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .footer-right p {
+      font-size: 0.95rem;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #4CAF50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+      }
+
+      .footer-container {
+        flex-direction: column;
+      }
+
+      .footer-left,
+      .footer-center,
+      .footer-right {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">GGF</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">Hubungi Kami</a></li>
+        <li><a href="index3.html">Bisnis</a></li>
+        <li><a href="index4.html">Publikasi</a></li>
+        <li><a href="index5.html">Kehadiran Global</a></li>
+        <li><a href="index6.html">Produk</a></li>
+        <li><a href="index13.html">Pengembang Web</a></li>
+        <li><a href="index15.html">Toko</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>PUBLIKASI</h1>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Great Giant Foods is committed to sustainability and excellence in food production.</p>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="publications">
+    <h2>Publications</h2>
+    <div class="grid-container">
+      <div class="card">
+        <img src="gambarr/Screenshot_4.png" alt="GGF Profil">
+        <h3>Profil Perusahaan</h3>
+      </div>
+      <div class="card">
+        <img src="gambarr/Screenshot_5.png" alt="GGF CSR">
+        <h3>CSR Report 2022</h3>
+      </div>
+      <div class="card">
+        <img src="gambarr/Screenshot_6.png" alt="GGF PT">
+        <h3>PT Great Giant Pineapple</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="gambarr/logo.jpg" alt="GGF Logo" />
+      </div>
+      <div class="footer-center">
+        <p>© 2024 Great Giant Foods Indonesia</p>
+      </div>
+      <div class="footer-right">
+        <p>📍 Brintang, Ngaringan, Kec. Gandusari,<br />Kabupaten Blitar, Jawa Timur 66187</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
